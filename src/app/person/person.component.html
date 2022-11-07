@@ -1,0 +1,10 @@
+<div class="card">
+    <h2>Person main details:</h2>
+    <p>Name: {{person.name}}</p>
+    <p>Email: {{person.email}}</p>
+    <p>Student status: {{person.isStudent ? 'Active' : 'Not active'}}</p>
+    <p>Address: {{person.address.city}}, {{person.address.street}}, {{person.address.suite}}, {{person.address.zipcode}} </p>
+    <button type="button" (click)="activeStudent()">Active student</button>
+</div>
+
+

@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-project';
+  person = {
+    name: "Dennis Schulist",
+      isStudent: false,
+      email: "Karley_Dach@jasper.info",
+      address: {
+        street: "Norberto Crossing",
+        suite: "Apt. 950",
+        city: "South Christy",
+        zipcode: 23505-1337,
+  }
+}
+
+getActivatedPerson(activatedPerson:any){
+  this.person = activatedPerson;
+  console.log(this.person);
+  
+}
+
 }
